@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    networks:
+      - default-network
+networks:
+  default-network:
+    driver: bridge
